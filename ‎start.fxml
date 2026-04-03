@@ -1,0 +1,10 @@
+‎<VBox spacing="15" alignment="CENTER"
+‎      xmlns="http://javafx.com/javafx/17"
+‎      xmlns:fx="http://javafx.com/fxml"
+‎      fx:controller="controller.StartController">
+‎
+‎    <Label text="CutQueue App"/>
+‎    <Button text="Start" onAction="#handleStart"/>
+‎    <Button text="Admin Login" onAction="#handleAdmin"/>
+‎
+‎</VBox>
