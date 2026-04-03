@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.BookingController">
+
+<VBox fx:id="rootBox" spacing="12" style="-fx-padding:20;">
+
+    <Label text="Select Service" style="-fx-font-size:20;"/>
+
+    <!-- Haircut -->
+    <TitledPane text="Haircut" expanded="true">
+        <VBox spacing="5">
+            <CheckBox text="Basic Haircut - ₱100"/>
+            <CheckBox text="Fade Cut - ₱150"/>
+            <CheckBox text="Undercut - ₱180"/>
+            <CheckBox text="Kids Haircut - ₱80"/>
+        </VBox>
+    </TitledPane>
+
+    <!-- Hair Color -->
+    <TitledPane text="Hair Color">
+        <VBox spacing="5">
+            <CheckBox text="Full Hair Color - ₱500"/>
+            <CheckBox text="Highlights - ₱400"/>
+            <CheckBox text="Bleaching - ₱600"/>
+        </VBox>
+    </TitledPane>
+
+    <!-- Shave -->
+    <TitledPane text="Shave">
+        <VBox spacing="5">
+            <CheckBox text="Beard Shave - ₱70"/>
+            <CheckBox text="Mustache Trim - ₱50"/>
+        </VBox>
+    </TitledPane>
+
+    <!-- Grooming -->
+    <TitledPane text="Grooming">
+        <VBox spacing="5">
+            <CheckBox text="Hair & Beard Grooming - ₱200"/>
+            <CheckBox text="Facial Treatment - ₱300"/>
+        </VBox>
+    </TitledPane>
+
+    <!-- Customer Info -->
+    <TextField fx:id="nameField" promptText="Name"/>
+    <TextField fx:id="addressField" promptText="Address"/>
+    <TextField fx:id="contactField" promptText="Contact"/>
+    <TextField fx:id="emailField" promptText="Email"/>
+
+    <DatePicker fx:id="datePicker"/>
+    <ComboBox fx:id="timeBox"/>
+
+    <Label fx:id="priceLabel" text="Total: ₱0"/>
+
+    <Button text="Confirm" onAction="#handleBook"/>
+
+</VBox>
+</ScrollPane>
