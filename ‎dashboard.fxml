@@ -1,0 +1,16 @@
+<VBox spacing="10" alignment="CENTER"
+‎      xmlns="http://javafx.com/javafx/17"
+‎      xmlns:fx="http://javafx.com/fxml"
+‎      fx:controller="controller.DashboardController">
+‎
+‎    <Label text="ADMIN DASHBOARD"/>
+‎    <ListView fx:id="listView"/>
+‎    <Label fx:id="selectedLabel"/>
+‎
+‎    <HBox spacing="10">
+‎        <Button text="Edit" onAction="#handleEdit"/>
+‎        <Button text="Cancel" onAction="#handleCancel"/>
+‎    </HBox>
+‎
+‎</VBox>
+
